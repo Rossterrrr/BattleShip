@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: 'Comfortaa';
     position: relative;
+    cursor: pointer;
 }
 .game{
     height: 100vh;
@@ -37,13 +38,23 @@ body {
 
 }
 .ships_container_1 div,.ships_container_2 div{
-    background-color: rgb(54, 106, 141);
+    background-color:rgb(80, 67, 204);
     width:20px;
     position: absolute;
     
 }
-.ships_container_2 div{
-    background-color: rgb(255, 105, 180);
+.info_bar{
+    position: absolute;
+    left:80%;
+    top:-96%;
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style-type:square;
+    display: block;
+    margin-bottom: 20px;
+    cursor:pointer;
 }
 .ship_4{
     height: 80px;
@@ -75,6 +86,7 @@ body {
     flex-direction: column;
     margin-left: 30px;
     margin-right: 25px;
+    margin-top: 4px;
 }
 .numbers{
     display: flex;
@@ -86,5 +98,51 @@ body {
     height: 20px;;
 }
 .menu{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    left:50%;
+    top:50%;
 }
+.menu button{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 50px;
+    border:solid rgb(119, 156, 180) 5px;
+    border-radius: 50px;
+    background-color: rgb(181, 225, 255);
+    font-family: 'Comfortaa';
+    font-size: 28px;
+}
+.button_scale {
+    -webkit-transform: scale(0.94);
+     transform: scale(0.94);
+ }
+ .field_icons{
+     display:flex;
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     align-items: center;
+     justify-content: center;
+
+ }
+ .red_cross , .grey_cross{
+     font-size: 18px;
+ }
+ .dot{
+     font-size: 40px;
+ }
+ .red_cross{
+     color:red;
+ }
+ .ready{
+     margin-left:50px;
+     height: 30px;
+     border-radius: 30px;
+     border:solid rgb(119, 156, 180) 5px;
+     border-radius: 50px;
+     background-color: rgb(181, 225, 255);
+     font-family: 'Comfortaa';
+     font-size: 16px;
+ }
